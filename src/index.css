@@ -35,54 +35,65 @@ h3 {
 
 .container {
   background-color: #fff;
-  padding: 30px;
+  padding : 0px 30px 10px 30px ;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   width: 500px;
   max-width: 95%;
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   overflow: hidden;
   animation: fadeInUp 1s ease-in-out;
+
 }
 
 /* Balance Styles */
 .balance {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: left ;
+  margin : 0px 30px 0px 10px ;
 }
 
 .balance h1 {
-  margin-top: 10px;
+  margin: 0px 100px 10px 0px ;
   color: #3498db;
-  font-size: 2.8em;
-  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
 /* Income/Expense Styles */
 .inc-exp-container {
   background-color: #fff;
-  padding: 25px;
+  padding: 5px 10px 0px 50px;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
+  justify-content:space-around;
+  margin: 10px;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .inc-exp-container > div {
   flex: 1;
-  text-align: center;
+  text-align: space-around;
+}
+.hello {
+  /* border: 5px solid red; */
+  display: flex;
+  justify-content: left;
 }
 
-.inc-exp-container h4 {
-  margin-bottom: 12px;
+/* .inc-exp-container h4 {
+  margin-bottom: 5px;
   color: #95a5a6;
-}
+  font-size: 0.9em;
+  margin : 0px;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+} */
 
 .money {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 1.2em;
+  font-weight: 60;
 }
 
 .plus {
@@ -128,11 +139,11 @@ h3 {
 
 .list li {
   background-color: #fff;
-  padding: 18px;
-  margin-bottom: 12px;
+  padding: 5px;
+  margin-bottom: 10px;
   border-radius: 8px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -156,6 +167,29 @@ h3 {
 
 .delete-btn:hover {
   background-color: #c0392b;
+}
+
+.history-container {
+  max-height: 120px; /* Fixed height */
+  overflow-y: auto;  /* Scrollbar when needed */
+  padding-right: 5px;
+  border-radius: 6px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 6px 120px rgba(190, 179, 179, 0.18);
+}
+
+/* Custom scrollbar */
+.history-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.history-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* Add Transaction Styles */
@@ -275,4 +309,10 @@ h3 {
   .btn {
     font-size: 15px;
   }
+}
+
+.forrm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -5,8 +5,8 @@ import { Transaction } from "./Transaction.jsx";
 export const TransactionList=()=>{
     const {transactions=[]} = useContext(GlobalContext) ;
     return(<>
+    <h3 style={{position:"initial"}}>History</h3>
     <div className="history-container">
-        <h3>History</h3>
         <ul className="list">
             {transactions.map((transaction)=>(
                 <Transaction key={transaction.id} transaction={transaction}/>

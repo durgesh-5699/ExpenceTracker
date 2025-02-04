@@ -9,13 +9,13 @@ export const IncomeExpenses=()=>{
 
     return(
         <div className="inc-exp-container">
-            <div>
-                <h4>Income</h4>
+            <div className="hello">
+                <h4>Income : </h4>
                 <p className="money plus">${income}</p>
             </div> 
-            <div>
-                <h4>Expenses</h4>
-                <p className="money minus">-${Math.abs(expense)}</p>
+            <div className="hello">
+                <h4>Expenses : </h4>
+                <p className="money minus">${Math.abs(expense)}</p>
             </div>
         </div>
     );

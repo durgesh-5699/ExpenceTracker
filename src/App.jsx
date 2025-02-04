@@ -8,8 +8,8 @@ import {GlobalProvider} from "./context/GlobalState.jsx"
 function App() {
   return (<>
     <GlobalProvider>
-      <Header/>
       <div className="container">
+      <Header/>
         <Balance/>
         <IncomeExpenses/>
         <TransactionList/>
